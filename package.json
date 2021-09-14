@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "discord.js": "^12.5.3",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-static": "^4.4.0",
+    "opusscript": "^0.0.8",
+    "ytdl-core": "^4.9.1"
+  },
+  "dependencies": {
+    "@discordjs/opus": "^0.5.3",
+    "fluent-ffmpeg": "^2.1.2"
+  }
+}
