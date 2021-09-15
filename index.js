@@ -122,8 +122,8 @@ function skip(message, serverQueue, index = 0) {
     if (!serverQueue) return message.channel.send('There is no song that I could skip!');
     serverQueue.songs.shift();
     serverQueue?.connection?.dispatcher?.end();
-    play(message.guild, serverQueue.songs[index-1]);
-    if (serverQueue.songs.length > 1) {
+    play(message.guild, serverQueue.songs[index === 0 ? 0 : index-1]);
+    if (index !== 0) {
         serverQueue.songs.splice(index-1,1); //by shift - the array became shorter by 1 element;
     }
 }
