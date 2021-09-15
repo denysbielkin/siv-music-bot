@@ -53,7 +53,7 @@ async function execute(message, serverQueue) {
     const playlistPattern = /^.*(youtu.be\/|list=)([^#\&\?]*).*/gi;
 
     const args = message.content.split(' ');
-    const isPlaylist = args[1]?.includes('share')
+    const isPlaylist = args[1]?.includes('playlist')
     if(isPlaylist) {
         console.log('ITS PLAYLIST~!');
     }
